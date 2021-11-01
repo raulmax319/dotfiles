@@ -1,0 +1,15 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ["~"]
+
+- link:
+    ~/.gitconfig: gitconfig
+    ~/.zshrc: zshrc
+
+- create:
+    - ~/Developer
+    - ~/Workspace
+# - shell:
+#  - [git submodule update --init --recursive, Installing submodules]
