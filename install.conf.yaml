@@ -5,11 +5,10 @@
 - clean: ["~"]
 
 - link:
-    ~/.gitconfig: gitconfig
-    ~/.zshrc: zshrc
+    ~/.gitconfig:
+    ~/.zshrc:
 
 - create:
     - ~/Developer
-    - ~/Workspace
 # - shell:
 #  - [git submodule update --init --recursive, Installing submodules]
