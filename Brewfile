@@ -28,5 +28,5 @@ cask "visual-studio-code"
 cask "onedrive"
 cask "adoptopenjdk8"
 cask "android-platform-tools"
-cask "iTerm2"
+cask "iterm2"
 # - - - - - - - - - - - - - -
