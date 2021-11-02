@@ -28,8 +28,10 @@ source $ZSH/oh-my-zsh.sh
 # Customize Prompt
 PROMPT='%(?.%F{green}⚙️ .%F{red}👹 %B%?)%f %F{154}%1~ %B%F{red}$(parse_git_branch)%F{black} %# %f%b' 
 
-alias ls='ls -lAFh'
+# alias ls='ls -lAFh'
+alias ls='exa -laFh --git'
 
+export HOMEBREW_CASK_OPTS="--no-quarantine"
 export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/tools
@@ -38,4 +40,4 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" 
 # Add Visual Studio Code (code)
-# export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
