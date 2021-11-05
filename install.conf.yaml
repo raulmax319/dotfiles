@@ -7,6 +7,7 @@
 - link:
     ~/.gitconfig:
     ~/.zshrc:
+    ~/OneDrive/ssh:
 
 - create:
     - ~/Developer

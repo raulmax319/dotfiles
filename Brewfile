@@ -1,6 +1,3 @@
-
-tap "adoptopenjdk/openjdk"
-
 # - - - - - - - - - - - - - -
 # homebrew taps
 tap "homebrew/bundle"
@@ -19,6 +16,7 @@ brew "watchman"
 brew "zsh"
 brew "exa"
 brew "git"
+brew "mas"
 
 # - - - - - - - - - - - - - -
 # casks
@@ -29,4 +27,14 @@ cask "onedrive"
 cask "adoptopenjdk8"
 cask "android-platform-tools"
 cask "iterm2"
+cask "android-studio"
+cask "insomnia"
+cask "discord"
+cask "reactotron"
+cask "microsoft-teams"
+cask "skype"
 # - - - - - - - - - - - - - -
+
+# - - - - - - - - - - - - - -
+# mas apps
+mas "Xcode", id: 497799835
