@@ -7,11 +7,12 @@
 - link:
     ~/.gitconfig:
     ~/.zshrc:
-    ~/OneDrive/ssh:
+    ~/.ssh: ~/OneDrive/ssh
 
 - create:
     - ~/Developer
 - shell:
+    - command: ./setup_ohmyzsh.sh
     - command: ./setup_homebrew.zsh
       stdout: true
       stderr: true

@@ -17,6 +17,7 @@ brew "zsh"
 brew "exa"
 brew "git"
 brew "mas"
+brew "nvm"
 
 # - - - - - - - - - - - - - -
 # casks
