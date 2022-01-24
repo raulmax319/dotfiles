@@ -30,6 +30,8 @@ PROMPT='%(?.%F{green}⚙️ .%F{red}👹 %B%?)%f %F{154}%1~ %B%F{red}$(parse_git
 
 # alias ls='ls -lAFh'
 alias ls='exa -laFh --git'
+alias as='open -a /Applications/Android\ Studio\ Preview.app ./android'
+alias podinstall='cd ios && pod install'
 
 export HOMEBREW_CASK_OPTS="--no-quarantine"
 export ANDROID_HOME=$HOME/Library/Android/sdk
@@ -41,3 +43,4 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" 
 # Add Visual Studio Code (code)
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

@@ -8,3 +8,4 @@ echo "\n<<< Starting Homebrew setup >>>\n"
 # brew install --cask --no-quarantine visual-studio-code
 
 brew bundle --verbose
+
