@@ -5,3 +5,11 @@
 	rebase = false
 [init]
 	defaultBranch = main
+[alias]
+	co = checkout
+	c = "!f() { git commit -m \"$1\"; }; f"
+	a = "!f() { git add .; git commit -m \"$1\"; }; f"
+	st = status
+	br = branch
+	unstage = reset HEAD --
+	last = log -1 HEAD

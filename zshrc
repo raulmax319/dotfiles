@@ -4,6 +4,11 @@ function mkcd () {
 	mkdir -p "$@" && cd "$_"
 }
 
+function dev () {
+	cd ~/Developer
+	cd "$@"
+}
+
 function parse_git_branch () {
 	git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/[\1]/'
 }
@@ -30,17 +35,15 @@ PROMPT='%(?.%F{green}⚙️ .%F{red}👹 %B%?)%f %F{154}%1~ %B%F{red}$(parse_git
 
 # alias ls='ls -lAFh'
 alias ls='exa -laFh --git'
-alias as='open -a /Applications/Android\ Studio\ Preview.app ./android'
-alias podinstall='cd ios && pod install'
+alias android='open -a /Applications/Android\ Studio.app ./android'
+alias pods='cd ios && pod install'
 
 export HOMEBREW_CASK_OPTS="--no-quarantine"
-export ANDROID_HOME=$HOME/Library/Android/sdk
-export PATH=$PATH:$ANDROID_HOME/emulator
-export PATH=$PATH:$ANDROID_HOME/tools
-export PATH=$PATH:$ANDROID_HOME/tools/bin
-export PATH=$PATH:$ANDROID_HOME/platform-tools
-export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" 
 # Add Visual Studio Code (code)
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Yarn
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+# npm global folder
+export PATH=~/.npm-global/bin:$PATH
