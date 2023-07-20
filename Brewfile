@@ -17,7 +17,6 @@ brew "swift-format"
 brew "swiftlint"
 brew "xcodegen"
 brew "zsh"
-cask "clion"
 cask "discord"
 cask "font-fira-code"
 cask "insomnia"
@@ -28,4 +27,3 @@ cask "sf-symbols"
 cask "stats"
 cask "visual-studio-code"
 mas "WhatsApp", id: 1147396723
-mas "Xcode", id: 497799835
